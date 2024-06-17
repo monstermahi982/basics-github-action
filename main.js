@@ -1,5 +1,6 @@
 console.log("calling from JS")
-const unusedVariable = 'Hello'; // This variable is declared but never used
+const unusedVariable = 'Hello';
+const name = 'Mahesh Here';
 
 function add(a, b) {
   return a + b;
