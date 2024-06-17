@@ -17,7 +17,7 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run JavaScript script
-        run: node path/to/your/script.js
+        run: node main.js
   lint:
     runs-on: ubuntu-latest
     steps:
