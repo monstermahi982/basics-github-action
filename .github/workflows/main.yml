@@ -17,4 +17,13 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run JavaScript script
-        run: node main.js
+        run: node path/to/your/script.js
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install ESLint
+        run: npm install eslint --save-dev
+      - name: Run ESLint
+        run: npx eslint
