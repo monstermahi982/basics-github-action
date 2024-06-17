@@ -27,3 +27,12 @@ jobs:
         run: npm install eslint --save-dev
       - name: Run ESLint
         run: npx eslint
+  prettier:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+      - name: Install Prettier
+        run: npm install -g prettier
+      - name: Check code formatting
+        run: prettier --check .
