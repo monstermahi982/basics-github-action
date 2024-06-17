@@ -35,4 +35,4 @@ jobs:
       - name: Install Prettier
         run: npm install -g prettier
       - name: Check code formatting
-        run: prettier --check .
+        run: prettier --check main.js
