@@ -17,4 +17,4 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
       - name: Run JavaScript script
-        run: node /main.js
+        run: node main.js
